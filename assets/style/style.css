@@ -1,0 +1,349 @@
+.bgc-primary {
+  background-color: #f47725;
+}
+
+.txt-primary {
+  color: #f47725;
+}
+
+.bgc-secondary {
+  background-color: #666f88;
+}
+
+.txt-secondary {
+  color: #666f88;
+}
+
+.bgc-secondary-navy {
+  background-color: #3d4251;
+}
+
+.txt-secondary-navy {
+  color: #3d4251;
+}
+
+.bgc-black {
+  background-color: #000;
+}
+
+.txt-black {
+  color: #000;
+}
+
+.bgc-white {
+  background-color: #fff;
+}
+
+.txt-white {
+  color: #fff;
+}
+
+.bgc-graye {
+  background-color: #eee;
+}
+
+.txt-graye {
+  color: #eee;
+}
+
+.bgc-grayd {
+  background-color: #ddd;
+}
+
+.txt-grayd {
+  color: #ddd;
+}
+
+.bgc-grayc {
+  background-color: #ccc;
+}
+
+.txt-grayc {
+  color: #ccc;
+}
+
+.bgc-graya {
+  background-color: #aaa;
+}
+
+.txt-graya {
+  color: #aaa;
+}
+
+.bgc-gray5 {
+  background-color: #555;
+}
+
+.txt-gray5 {
+  color: #555;
+}
+
+.bgc-gray7 {
+  background-color: #777;
+}
+
+.txt-gray7 {
+  color: #777;
+}
+
+.bgc-gray9 {
+  background-color: #999;
+}
+
+.txt-gray9 {
+  color: #999;
+}
+
+.bgc-grayf8 {
+  background-color: #f8f8f8;
+}
+
+.txt-grayf8 {
+  color: #f8f8f8;
+}
+
+.bgc-red {
+  background-color: #ea002c;
+}
+
+.txt-red {
+  color: #ea002c;
+}
+
+.bgc-disabled {
+  background-color: #cacbd5;
+}
+
+.txt-disabled {
+  color: #cacbd5;
+}
+
+.bgc-purple {
+  background-color: #c875c4;
+}
+
+.txt-purple {
+  color: #c875c4;
+}
+
+.bgc-green {
+  background-color: #77ae4c;
+}
+
+.txt-green {
+  color: #77ae4c;
+}
+
+.size-regular {
+  font-size: 16px;
+}
+
+.size-medium {
+  font-size: 22px;
+}
+
+.size-large {
+  font-size: 26px;
+}
+
+.size-LX2 {
+  font-size: 32px;
+}
+
+:root {
+  --primary: #f47725;
+  --secondary: #666f88;
+  --secondaryNavy: #3d4251;
+  --black: #000;
+  --white: #fff;
+  --grayd: #ddd;
+  --graye: #eee;
+  --grayc: #ccc;
+  --graya: #aaa;
+  --gray5: #555;
+  --gray7: #777;
+  --gray9: #999;
+  --grayf8: #f8f8f8;
+  --red: #ea002c;
+  --disabled: #cacbd5;
+  --purple: #c875c4;
+  --green: #77ae4c;
+  --size-regular: 16px;
+  --size-medium: 22px;
+  --size-large: 26px;
+  --size-LX2: 32px;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+i {
+  font-style: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* webfont */
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("/assets/fonts/notoSansKr/noto-sans-kr-v21-korean-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("/assets/fonts/notoSansKr/noto-sans-kr-v21-korean-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("/assets/fonts/notoSansKr/noto-sans-kr-v21-korean-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 900;
+  src: local(""), url("/assets/fonts/notoSansKr/noto-sans-kr-v21-korean-900.woff2") format("woff2");
+}
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.ui-list {
+  display: flex;
+  justify-content: initial;
+  align-items: initial;
+  flex-direction: row;
+  gap: 10px;
+  padding: 20px;
+  background-color: var(--green);
+}
+.ui-list > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex: 1;
+  height: 200px;
+  border-radius: 10px;
+  background-color: #fff;
+}/*# sourceMappingURL=style.css.map */

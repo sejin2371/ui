@@ -1,0 +1,97 @@
+// image url
+$imgurl: '/assets/images/';
+
+// colors
+$primary: #f47725;
+$secondary: #666f88;
+$secondaryNavy: #3d4251;
+$black: #000;
+$white: #fff;
+$graye: #eee;
+$grayd: #ddd;
+$grayc: #ccc;
+$graya: #aaa;
+$gray5: #555;
+$gray7: #777;
+$gray9: #999;
+$grayf8: #f8f8f8;
+$red: #ea002c;
+$disabled: #cacbd5;
+$purple: #c875c4;
+$green: #77ae4c;
+
+// font size
+$size-regular: 16px;
+$size-medium: 22px;
+$size-large: 26px;
+$size-LX2: 32px;
+
+$colors: (
+    'primary': $primary,
+    'secondary': $secondary,
+    'secondary-navy': $secondaryNavy,
+    'black': $black,
+    'white': $white,
+    'graye': $graye,
+    'grayd': $grayd,
+    'grayc': $grayc,
+    'graya': $graya,
+    'gray5': $gray5,
+    'gray7': $gray7,
+    'gray9': $gray9,
+    'grayf8': $grayf8,
+    'red': $red,
+    'disabled': $disabled,
+    'purple': $purple,
+    'green': $green,
+);
+
+$fontSize: (
+    'size-regular': $size-regular,
+    'size-medium': $size-medium,
+    'size-large': $size-large,
+    'size-LX2': $size-LX2,
+);
+
+// background / txt color
+@each $semantic, $color in $colors {
+    .bgc-#{$semantic} {
+        background-color: $color;
+    }
+    .txt-#{$semantic} {
+        color: $color;
+    }
+}
+// font-size
+@each $semantic, $size in $fontSize {
+    .#{$semantic} {
+        font-size: $size;
+    }
+}
+
+:root {
+    // color
+    --primary: #{$primary};
+    --secondary: #{$secondary};
+    --secondaryNavy: #{$secondaryNavy};
+    --black: #{$black};
+    --white: #{$white};
+    --grayd: #{$grayd};
+    --graye: #{$graye};
+    --grayc: #{$grayc};
+    --graya: #{$graya};
+    --gray5: #{$gray5};
+    --gray7: #{$gray7};
+    --gray9: #{$gray9};
+    --grayf8: #{$grayf8};
+    --red: #{$red};
+    --disabled: #{$disabled};
+    --purple: #{$purple};
+    --green: #{$green};
+
+    // size
+    --size-regular: #{$size-regular};
+    --size-medium: #{$size-medium};
+    --size-large: #{$size-large};
+    --size-LX2: #{$size-LX2};
+}

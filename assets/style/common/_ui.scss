@@ -1,0 +1,17 @@
+@use '../util' as *;
+
+.ui-list {
+    @include flex {
+        gap: 10px;
+    }
+    padding: 20px;
+    background-color: var(--green);
+
+    & > div {
+        @include flexCenter;
+        flex: 1;
+        height: 200px;
+        border-radius: 10px;
+        background-color: #fff;
+    }
+}

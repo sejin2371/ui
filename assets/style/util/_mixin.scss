@@ -1,0 +1,82 @@
+@use "./variable" as *;
+
+@mixin flex($direction: row, $flex: none, $x: initial, $y: initial) {
+  display: flex;
+  justify-content: $x;
+  align-items: $y;
+  flex-direction: $direction;
+  @content;
+}
+@mixin flexColumn {
+  @include flex($direction: column);
+  @content;
+}
+@mixin flexBetween {
+  @include flex($x: space-between, $y: center);
+  @content;
+}
+@mixin flexYCenter {
+  @include flex($x: flex-start, $y: center);
+  @content;
+}
+@mixin flexCenter {
+  @include flex($x: center, $y: center);
+  @content;
+}
+
+@mixin bgi($img, $bgp: 0 0, $size: contain) {
+  background-repeat: no-repeat;
+  background-size: $size;
+  background-position: $bgp;
+  background-image: url($imgurl + $img);
+}
+
+@mixin mask($img, $bgp: 0 0, $size: contain) {
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: $size;
+  -webkit-mask-image: url($imgurl + $img);
+  -webkit-mask-position: $bgp;
+}
+
+// ellipsis
+@mixin ellipsis($line: 1) {
+  @if ($line == 1) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  } @else {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+  }
+  word-break: break-all;
+}
+// hidden
+@mixin hidden {
+  text-indent: -9999em;
+  overflow: hidden;
+}
+
+// center
+@mixin center {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+// contents
+@mixin contents {
+  width: var(--contents-width);
+  margin: 0 auto;
+}
+
+// media
+@mixin inner {
+  @media (max-width: 1485px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
